@@ -1,0 +1,30 @@
+.container{
+    width: 250px;
+    height: 350px;
+    position: relative;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.front-card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: antiquewhite;
+}
+
+.back-card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: rgb(252, 190, 109);
+    transform: rotateY(180deg);
+}
