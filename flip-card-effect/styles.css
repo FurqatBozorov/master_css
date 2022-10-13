@@ -10,6 +10,7 @@
     position: absolute;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
+    border-radius: 5px;
 }
 
 .front-card{
@@ -17,7 +18,13 @@
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    background-color: antiquewhite;
+    background-color: rgb(34, 212, 7);
+    color: rgb(246, 233, 233);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
 }
 
 .back-card{
@@ -25,6 +32,15 @@
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    background-color: rgb(252, 190, 109);
+    background-color: rgb(38, 40, 203);
+    transform: rotateY(180deg);
+    color: rgb(246, 233, 233);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.card:hover{
     transform: rotateY(180deg);
 }
